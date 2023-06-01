@@ -1,24 +1,26 @@
-// Smooth Scrolling
-$("#navbar a, .btn").on("click", function (event) {
-    if (this.hash !== "") {
-        event.preventDefault();
+let arrowButtons = document.getElementsByClassName("arrow");
+let reviews = document.getElementsByClassName("review");
+let modus = "one-two-three";
 
-        const hash = this.hash;
-
-        $("html, body").animate(
-            {
-                scrollTop: $(hash).offset().top - 100
-            },
-            800
-        );
+for(let i = 0; i < arrowButtons.length; i++){
+    arrowButtons[i].onclick = function(){
+        if(modus === "one-two-three"){
+        reviews[0].style.display = "none";
+        reviews[1].style.display = "none";
+        reviews[2].style.display = "none";
+        reviews[3].style.display = "block";
+        reviews[4].style.display = "block";
+        reviews[5].style.display = "block";
+        modus = "four-five-six";
+        }
+        else{
+            reviews[0].style.display = "block";
+            reviews[1].style.display = "block";
+            reviews[2].style.display = "block";
+            reviews[3].style.display = "none";
+            reviews[4].style.display = "none";
+            reviews[5].style.display = "none";
+            modus = "one-two-three";
+        }
     }
-});
-
-// Sticky menu background
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 150) {
-        document.querySelector("#navbar").style.opacity = 0.9;
-    } else {
-        document.querySelector("#navbar").style.opacity = 1;
-    }
-});
+}
