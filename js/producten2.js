@@ -3,103 +3,103 @@ let products = {
     {
         productName: "Ark Survival",
         category: "Adventure",
-        price: "30",
+        price: "16,79",
         image: "img2/ark.webp"
     },
     {
         productName: "Watch Dogs 2",
         category: "Action",
-        price: "129",
+        price: "8,99",
         image: "img2/watchdogs.webp"
     },
     {
         productName: "The last of us",
         category: "Action",
-        price: "50",
+        price: "59,99",
         image: "img2/lastofus.webp"
     },
     {
         productName: "Read dead online",
         category: "Action",
-        price: "30",
+        price: "19,79",
         image: "img2/reddeadredemption.webp"
     },
     {
         productName: "Destiny 2",
         category: "Action",
-        price: "49",
+        price: "0,00",
         image: "img2/destiny2.webp"
     },
     {
         productName: "God Of War",
         category: "Adventure",
-        price: "49",
+        price: "49,99",
         image: "img2/godofwar.webp"
     },
     {
         productName: "Gta 5",
         category: "Action",
-        price: "99",
+        price: "14,99",
         image: "img2/gta5.webp"
     },
     {
         productName: "Formula 1",
         category: "Sport",
-        price: "29",
+        price: "69,99",
         image: "img2/f1.webp"
     },
     {
         productName: "Fishing Planet",
         category: "Sport",
-        price: "29",
+        price: "0,00",
         image: "img2/fishing.webp"
     },
     {
         productName: "Forza Horizon 5",
         category: "Sport",
-        price: "29",
+        price: "59,99",
         image: "img2/forza5.webp"
     },
     {
         productName: "Sea Of Thieves",
         category: "Adventure",
-        price: "129",
+        price: "39,99",
         image: "img2/sea.webp"
     },
     {
         productName: "Hogwarts Legacy",
         category: "Adventure",
-        price: "129",
+        price: "59,99",
         image: "img2/hogwarts.webp"
     },
     {
         productName: "Rainbow Six",
         category: "Action",
-        price: "129",
+        price: "7,99",
         image: "img2/rainbow.webp"
     },
     {
         productName: "Rust",
         category: "Action",
-        price: "129",
+        price: "39,99",
         image: "img2/rust.webp"
     },
     {
         productName: "Fifa 2023",
         category: "Sport",
-        price: "29",
+        price: "69,99",
         image: "img2/fifa23.webp"
     },
     {
         productName: "Starwars",
         category: "Adventure",
-        price: "129",
+        price: "69,99",
         image: "img2/starwars.webp"
     },
     {
         productName: "Minecraft",
         category: "Adventure",
-        price: "30",
+        price: "15,00",
         image: "img2/minecraft.webp"
     },
 ]
@@ -151,7 +151,6 @@ for(let i of products.data){
     document.getElementById("products").appendChild(card);
     }
 
-    // Adicionar ouvinte de evento para os botões de link
     const cardLinks = document.querySelectorAll(".card-link");
     cardLinks.forEach((link) => {
     link.addEventListener("click", () => {
@@ -203,6 +202,36 @@ document.getElementById("search").addEventListener("click", () => {
 });
 
   
+window.onload = () => {
+    filterProduct("all");
+}
+
+function filterByPrice(value) {
+    let elements = document.querySelectorAll(".card");
+    elements.forEach((element) => {
+        let price = element.querySelector(".container h6").innerText;
+        price = price.substring(1); 
+        if (parseInt(price) <= value) {
+            element.classList.remove("hide");
+        } else {
+            element.classList.add("hide");
+        }
+    });
+}
+
+document.querySelector(".dropdown-toggle").addEventListener("click", () => {
+    document.querySelector(".dropdown-menu").classList.toggle("show");
+});
+
+window.addEventListener("click", (event) => {
+    if (!event.target.matches(".dropdown-toggle")) {
+        let dropdownMenu = document.querySelector(".dropdown-menu");
+        if (dropdownMenu.classList.contains("show")) {
+            dropdownMenu.classList.remove("show");
+        }
+    }
+});
+
 window.onload = () => {
     filterProduct("all");
 }

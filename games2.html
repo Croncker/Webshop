@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webshop</title>
-    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/games2.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="js/producten.js" defer></script>
+    <script src="js/producten2.js" defer></script>
 </head>
 <body>
     <nav>
@@ -37,12 +37,14 @@
             <input type="search" id="search-input" placeholder="Search product name here">
             <button id="search">Search</button>
         </div>
-        <div id="buttons">
-            <button class="button-value" onclick="filterProduct('all')">Alles</button>
-            <button class="button-value" onclick="filterProduct('Action')">Action</button>
-            <button class="button-value" onclick="filterProduct('Adventure')">Adventure</button>
-            <button class="button-value" onclick="filterProduct('Sport')">Sport</button>
-        </div>
+        <div id="dropdown">
+            <button class="dropdown-toggle">Prijs</button>
+            <div class="dropdown-menu">
+                <button class="dropdown-item" onclick="filterByPrice(5000)">Alles</button>
+                <button class="dropdown-item" onclick="filterByPrice(20)">T/m €20</button>
+                <button class="dropdown-item" onclick="filterByPrice(50)">T/m €50</button>
+                <button class="dropdown-item" onclick="filterByPrice(150)">T/m €150</button>
+            </div>
         <div id="products"></div>
     </div>
 
