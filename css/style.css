@@ -13,7 +13,7 @@ html{
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: rgb(255, 255, 255);
+    background: rgb(245, 245, 245);
 }
 
 a {
@@ -26,8 +26,8 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 50px;
-    letter-spacing: 2px;
+    padding-bottom: 5rem;
+    letter-spacing: 0.2rem;
 }
 
 /*========================================Navbar========================================*/
@@ -37,14 +37,14 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 8rem;
     background: #fff;
-    padding: 20px 40px;
+    padding: 2rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 15px 15px (0,0,0,0.05);
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1.5rem 1.5rem (0,0,0,0.05);
+    border-bottom: 0.15rem solid rgba(0, 0, 0, 0.1);
 }
 
 .group{
@@ -60,7 +60,7 @@ nav > img{
 nav ul{
     position: relative;
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 }
 
 nav ul li{
@@ -73,15 +73,15 @@ nav ul li a{
     font-size: 1.5rem;
     color: #333;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2rem;
 }
 
 nav ul li a:before{
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: -0.2rem;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background: #333;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
@@ -111,7 +111,7 @@ nav .search{
     display: flex;
     background: #fff;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 30rem;
     transition: 0.5s ease-in-out;
 }
 
@@ -123,19 +123,19 @@ nav .search{
     width: 100%;
     border: none;
     outline: none;
-    height: 50px;
+    height: 5rem;
     color: #333;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     background: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
 }
 
 .searchBtn{
     width: 3rem;
     height: 2rem;
     position: relative;
-    left: 30px;
-    top: 2.5px;
+    left: 3rem;
+    top: 0.25rem;
     transition: 0.5s ease-in-out;
 }
 
@@ -167,7 +167,7 @@ nav .search{
     .menuToggle{
         position: absolute;
         display: block;
-        font-size: 2em;
+        font-size: 2rem;
         cursor: pointer;
         transform: translateX(30px);
         z-index: 10;
@@ -179,19 +179,19 @@ nav .search{
         left: 100%;
     }
     nav.open .navigation{
-        top: 80px;
+        top: 8rem;
         opacity: 1;
         visibility: visible;
         left: 0;
         flex-direction: column;
         background: #fff;
         width: 100%;
-        height: calc(100vh - 80px);
-        padding: 40px;
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        height: calc(100vh - 8rem);
+        padding: 4rem;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.05);
     }
     nav.open .navigation li a{
-        font-size: 1.25em;
+        font-size: 1.25rem;
     }
     .hide{
         display: none;
@@ -219,18 +219,18 @@ nav .search{
 
 .showcase-container p {
     font-size: 2.2rem;
-    padding: 7px 0;
+    padding: 0.7rem 0;
     margin-right: 70rem;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 60px;
+    padding: 1.5rem 6rem;
     font-size: 1.8rem;
     text-transform: uppercase;
     background: #880707;
     color: rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 0.5rem;
     transition: background 500ms ease;
 }
 
@@ -241,14 +241,14 @@ nav .search{
 
 /*========================================About========================================*/
 #about{
-    background: white;
+    background: rgb(245, 245, 245);
 }
 
 .about {
 	max-width: 1170px;
 	margin: 0 auto;
-    padding-top: 20px;
-	padding-right: 30px;
+    padding-top: 2rem;
+	padding-right: 3rem;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -262,12 +262,12 @@ nav .search{
     width: 97%;
     height: 93%;
     margin-top: 1rem;
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
 
 .content-about {
 	flex-basis: 50%;
-	padding-left: 50px;
+	padding-left: 5rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -286,14 +286,14 @@ nav .search{
 }
 
 .sub-images-about {
-	margin-top: 20px;
+	margin-top: 2rem;
 	display: flex;
 }
 
 .sub-images-about img {
 	max-width: 25%;
-	margin-right: 10px;
-    border-radius: 15px;
+	margin-right: 1rem;
+    border-radius: 1.5rem;
 }
 
 .btn2 {
@@ -301,15 +301,15 @@ nav .search{
     align-items: center;
     justify-content: center;
     width: 250px;
-    padding: 15px;
+    padding: 1.5rem;
     font-size: 1.7rem;
     text-transform: uppercase;
     background: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: background 500ms ease;
-    margin: 30px auto 0;
-    border: 1px solid black;
+    margin: 3rem auto 0;
+    border: 0.1rem solid black;
 }
 
 .btn2:hover{
@@ -324,7 +324,7 @@ nav .search{
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .left-content, .right-content {
@@ -333,15 +333,15 @@ nav .search{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-    margin-top: 70px;
+    margin-top: 7rem;
 }
 
 .circle-image-container {
-	width: 100px;
-	height: 100px;
+	width: 10rem;
+	height: 10rem;
 	border-radius: 50%;
 	overflow: hidden;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .circle-image-container img {
@@ -361,7 +361,27 @@ nav .search{
 }
 
 .right-content {
-	padding-left: 20px;
+	padding-left: 2rem;
+}
+
+.left-content,
+.right-content {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    overflow: hidden;
+    background-color: rgba(218, 218, 218, 0.5); /* Cor de fundo escura */
+    border-radius: 1.5rem; /* Raio de borda de 15px */
+    padding:20px; /* Espaçamento interno para separar o conteúdo do fundo */
+    color: #000000; /* Cor do texto para garantir legibilidade */
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.left-content + .right-content {
+    margin-left: 3rem;
 }
 
 /*========================================About 2========================================*/
@@ -371,12 +391,12 @@ nav .search{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 70px;
+    margin-top: 7rem;
 }
 
 .content-about2 {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 2rem;
     display: flex;
     flex-direction: column;
 }
@@ -385,7 +405,7 @@ nav .search{
     width: 100%;
     height: auto;
     height: 32rem;
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
 
 .content-about2 > h1{
@@ -399,44 +419,24 @@ nav .search{
 }
 
 .content-about2 > p{
-    margin-top: 10px;
+    margin-top: 1rem;
     font-size: 170%;
-}
-
-.left-content,
-.right-content {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-    overflow: hidden;
-    background-color: rgba(218, 218, 218, 0.5); /* Cor de fundo escura */
-    border-radius: 15px; /* Raio de borda de 15px */
-    padding:20px; /* Espaçamento interno para separar o conteúdo do fundo */
-    color: #000000; /* Cor do texto para garantir legibilidade */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.left-content + .right-content {
-    margin-left: 30px;
 }
 
 .btn3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: 25rem;
     padding: 15px;
     font-size: 1.7rem;
     text-transform: uppercase;
     background: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: background 500ms ease;
-    margin: 30px auto 0;
-    border: 1px solid black;
+    margin: 3rem auto 0;
+    border: 0.1rem solid black;
 }
 
 .btn3:hover{
@@ -452,7 +452,7 @@ nav .search{
 }
 
 .section--third{
-    background: white;
+    background: rgb(245, 245, 245);
     display: flex;
     height: auto;
     padding: 4rem;
@@ -461,7 +461,7 @@ nav .search{
 
 .arrow{
     width: 10%;
-    background: white;
+    background: rgb(245, 245, 245);
     font-size: 700%;
     outline: none;
     border: none;
@@ -551,18 +551,18 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: rgba(218, 218, 218, 0.5);;
-    padding: 70px 0;
+	background-color: rgba(218, 218, 218, 0.5);
+    padding: 7rem 0;
 }
 .footer-col{
    width: 25%;
-   padding: 0 15px;
+   padding: 0 1.5rem;
 }
 .footer-col h4{
-	font-size: 18px;
+	font-size: 1.8rem;
 	color: black;
 	text-transform: capitalize;
-	margin-bottom: 35px;
+	margin-bottom: 3.5rem;
 	font-weight: 500;
 	position: relative;
 }
@@ -570,17 +570,17 @@ ul{
 	content: '';
 	position: absolute;
 	left:0;
-	bottom: -10px;
+	bottom: -1rem;
 	background-color: #000000;
-	height: 2px;
+	height: 0.2rem;
 	box-sizing: border-box;
-	width: 50px;
+	width: 5rem;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 1.6rem;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
@@ -591,7 +591,7 @@ ul{
 }
 .footer-col ul li a:hover{
 	color: #000000;
-	padding-left: 8px;
+	padding-left: 0.8rem;
 }
 
 .footer-col ul p{
@@ -601,12 +601,12 @@ ul{
 }
 .footer-col .social-links a{
 	display: inline-block;
-	height: 40px;
-	width: 40px;
+	height: 4rem;
+	width: 4rem;
 	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
+	margin:0 1rem 1rem 0;
 	text-align: center;
-	line-height: 40px;
+	line-height: 4rem;
 	border-radius: 50%;
 	color: black;
 	transition: all 0.5s ease;
@@ -621,7 +621,7 @@ ul{
 @media(max-width: 767px) {
     .showcase-container p {
         font-size: 2.2rem;
-        padding: 7px 0;
+        padding: 0.7rem 0;
         margin-right: 20rem;
     }    
     .image-about {
@@ -633,23 +633,38 @@ ul{
         width: 200%;
         height: 90%;
         margin-top: 1rem;
-        border-radius: 15px;
+        border-radius: 1.5rem;
     }
     
     .content-about {
         flex-basis: 100%;
-        padding-left: 10px;
+        padding-left: 1rem;
         display: flex;
         flex-direction: column;
     }
     .footer-col {
       width: 50%;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
     }
   }
 
 
 @media(max-width: 574px){
+    .sub-images-about img {
+        max-width: 22%;
+    }
+    .about{
+        padding-right: 0rem;
+    }
+    .left-content + .right-content {
+        margin-left: 0rem;
+    }
+    .left-content{
+        flex-basis: 80%;
+    }
+    .right-content{
+        flex-basis: 80%;
+    }
     .footer-col{
       width: 100%;
     }
