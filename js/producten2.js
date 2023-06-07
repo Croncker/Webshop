@@ -19,7 +19,7 @@ let products = {
         image: "img2/lastofus.webp"
     },
     {
-        productName: "Read dead online",
+        productName: "Red dead online",
         category: "Action",
         price: "19,79",
         image: "img2/reddeadredemption.webp"
@@ -189,8 +189,8 @@ function filterProduct(value){
 
 document.getElementById("search").addEventListener("click", () => {
     let searchInput = document.getElementById("search-input").value;
-    let elements = document.querySelectorAll("product-name");
-    let cards = document.querySelectorAll("card");
+    let elements = document.querySelectorAll(".product-name");
+    let cards = document.querySelectorAll(".card");
     elements.forEach((element,index) =>{
         if(element.innerText.includes(searchInput.toUpperCase())){
             cards[index].classList.remove("hide");

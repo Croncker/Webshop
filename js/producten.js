@@ -19,7 +19,7 @@ let products = {
         image: "img2/lastofus.webp"
     },
     {
-        productName: "Read dead online",
+        productName: "Red dead online",
         category: "Action",
         price: "30",
         image: "img2/reddeadredemption.webp"
@@ -161,28 +161,29 @@ for(let i of products.data){
 });
 
 
-function filterProduct(value){
-    let buttons = document.querySelectorAll("button-value");
+function filterProduct(value) {
+    let buttons = document.querySelectorAll(".button-value");
     buttons.forEach((button) => {
-        if(value.toUpperCase()  == buttons.innerText.toUpperCase()){
-            button.classList.add("active");
-        }
-        else{
-            button.classList.remove("active");
-        }
+      if (value.toUpperCase() == "ALL" && button.innerText.toUpperCase() == "ALLES") {
+        button.classList.add("active");
+      } else if (value.toUpperCase() == button.innerText.toUpperCase()) {
+        button.classList.add("active");
+      } else {
+        button.classList.remove("active");
+      }
     });
-
+    
     let elements = document.querySelectorAll(".card");
-    elements.forEach((elements) => {
+    elements.forEach((element) => {
         if(value == "all"){
-            elements.classList.remove("hide");
+            element.classList.remove("hide");
         }
         else{
-            if (elements.classList.contains(value)){
-                elements.classList.remove("hide");
+            if (element.classList.contains(value)){
+                element.classList.remove("hide");
             }
             else{
-                elements.classList.add("hide");
+                element.classList.add("hide");
             }
         }
     });
@@ -190,9 +191,9 @@ function filterProduct(value){
 
 document.getElementById("search").addEventListener("click", () => {
     let searchInput = document.getElementById("search-input").value;
-    let elements = document.querySelectorAll("product-name");
-    let cards = document.querySelectorAll("card");
-    elements.forEach((element,index) =>{
+    let elements = document.querySelectorAll(".product-name");
+    let cards = document.querySelectorAll(".card");
+    elements.forEach((element,index) => {
         if(element.innerText.includes(searchInput.toUpperCase())){
             cards[index].classList.remove("hide");
         }
