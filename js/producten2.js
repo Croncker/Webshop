@@ -142,7 +142,7 @@ for(let i of products.data){
     if (i.productName === "God Of War") {
         button.classList.add("card-link");
         button.setAttribute("data-url", "product1.html"); //colocar link aqui
-    } else if (i.productName === "Nome do Produto 2") {
+    } else if (i.productName === "Red dead online") {
         button.classList.add("card-link");
         button.setAttribute("data-url", "product2.html"); //colocar link aqui
     }

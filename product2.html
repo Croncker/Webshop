@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webshop</title>
-    <link rel="stylesheet" href="css/games2.css">
+    <link rel="stylesheet" href="css/product2.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="js/producten2.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/product2.js" defer></script>
 </head>
 <body>
     <nav>
@@ -32,22 +33,47 @@
         </div>
     </nav>
 
-    <div class="wrapper">
-        <section id="search-container">
-            <input type="search" id="search-input" placeholder="Search product name here">
-            <button id="search">Search</button>
-        </section>
-        <section id="dropdown">
-            <button class="dropdown-toggle">Prijs</button>
-            <ul class="dropdown-menu">
-                <li><button class="dropdown-item" onclick="filterByPrice(5000)">Alles</button></li>
-                <li><button class="dropdown-item" onclick="filterByPrice(20)">T/m €20</button></li>
-                <li><button class="dropdown-item" onclick="filterByPrice(50)">T/m €50</button></li>
-                <li><button class="dropdown-item" onclick="filterByPrice(150)">T/m €150</button></li>
-            </ul>
-        </section>
-        <div id="products"></div>
+
+    <div class="small-container single-product">
+        <div class="row2">
+            <div class="col-2">
+                <div class="image-container">
+                    <img src="img4/reddead1.jpg" width="100%" id="ProductImg" alt="">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="img4/reddead1.jpg" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img4/reddead2.webp" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img4/reddead3.jpg" width="100%" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img4/reddead4.jpg" width="100%" class="small-img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <p class="okay">Home / Red Dead Redemption</p>
+                <h1 id="productTitle">Red Dead Redemption</h1>
+                <h4 id="productPrice" class="price">$49,99</h4>
+                <select id="editionSelect">
+                    <option>Select</option>
+                    <option value="normal">Red Dead Redemption</option>
+                    <option value="collection">Collectors Edition</option>
+                    <option value="limited">Ultimate Edition</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+                <h3>Product Details<i class="fa fa-indent"></i></h3>
+                <br>
+                <p class="okay2">Ontdek het meeslepende verhaal van het Wilde Westen in Red Dead Redemption! Waag je in uitgestrekte, ongerepte landschappen, waar gevaar op de loer ligt bij elke bocht. Als een vogelvrije op zoek naar verlossing, krijg je de kans om je eigen pad te smeden in dit epische actie-avonturenspel. Verken adembenemende landschappen, van dorre woestijnen tot besneeuwde bergen, en dompel jezelf onder in een rijk en meeslepend verhaal vol boeiende personages en spannende wendingen. Maak keuzes die je lot zullen bepalen en invloed zullen hebben op de wereld om je heen.</p>
+            </div>
+        </div>
     </div>
+
 
     <footer id="footer" class="footer">
         <div class="container">
