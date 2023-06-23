@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webshop</title>
-    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/games1.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/producten.js" defer></script>
 </head>
 <body>
@@ -15,9 +16,14 @@
         <div class="group">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
+                <li><a href="games1.html">Games</a></li>
                 <li><a href="games2.html">Prijs</a></li>
                 <li><a href="#footer">Contact</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span> 0</span>
+                    </a>
+                </li>
             </ul>
             <div class="search">
                 <span class="icon">
@@ -90,6 +96,17 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function onLoadCartNumbers() {
+        let productNumbers = localStorage.getItem('cartNumbers');
+
+        if (productNumbers) {
+            document.querySelector('.cart span').textContent = productNumbers;
+        }
+        }
+
+        onLoadCartNumbers();
+    </script>
     <script>
         let searchBtn = document.querySelector('.searchBtn');
         let closeBtn = document.querySelector('.closeBtn');

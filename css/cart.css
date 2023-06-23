@@ -191,152 +191,101 @@ nav .search{
 
 /*========================================Product========================================*/
 
-.small-container{
-    max-width: 1000px;
-    margin: auto;
-    padding-left: 2.5rem;
-    padding-right: 2rem;
-}
-
-.row2{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.single-product{
-    margin-top: 8rem;
-}
-
-.small-img-row{
-    display: flex;
+.products-container{
+    max-width: 65rem;
     justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 10rem;
 }
 
-.image-container {
+.products-container ion-icon{
+   font-size: 2.5rem;
+   color: blue;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   cursor: pointer; 
+}
+
+.product-header{
     width: 100%;
-    padding-right: 2rem;
+    max-width: 65rem;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 0.4rem solid lightgrey;
+    margin: 0 auto;
 }
 
-.col-2 img{
-    max-width: 200%;
-    padding: 5rem 0;
-}
-
-.small-img-col{
-    flex-basis: 24%;
-    cursor: pointer;
-}
-
-.single-product .col-2 img{
-    padding: 0;
-}
-
-.single-product .col-2{
-    padding: 2rem;
-}
-
-.col-2{
-    flex-basis: 350%;
-    line-height: 5rem;
-    margin: 2.5rem 0;
-}
-
-.col-2 h1{
-    font-size: 5rem;
-    line-height: 6rem;
-    margin: 2.5rem 0;
+.product-title{
+    width: 45%;
 }
 
 .price{
-    color: green;
-}
-
-.single-product select{
-    display: block;
-    padding: 1rem;
-    margin-top: 2rem;
-    border: 0.1rem solid #000000;
-}
-
-.single-product h4{
-    margin: 2rem 0;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.single-product input{
-    width: 5rem;
-    height: 4rem;
-    padding-left: 1rem;
-    font-size: 2rem;
-    margin-right: 1rem;
-    border: 1px solid #000000;
-}
-
-input:focus{
-    outline: none;
-}
-
-a{
-    text-decoration: none;
-    color: #555;
-}
-
-.single-product .fa{
-    color: #880707;
-    margin-left: 1rem;
-}
-
-.oka2{
-    color: #555;
-}
-
-.okay{
-    margin-top: 5rem;
-}
-
-.btn{
-    display: inline-block;
-    background: #880707;
-    color: #fff;
-    padding: 1rem 3rem;
-    margin: 3rem 0;
-    border-radius: 3rem;
-    transition: background 0.5s;
-}
-
-.btn:hover{
-    background: rgb(187, 21, 21);
-}
-
-.notification-container {
-    position: fixed;
-    bottom: 40rem;
-    right: 2rem;
-    z-index: 9999;
-    color: white;
-    font-size: 1.5rem;
-  }
-  
-  .notification {
-    background-color: #880707;
-    color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
+    width: 15%;
+    border-bottom: 0.1rem solid lightgrey;
     display: flex;
     align-items: center;
-  }
+}
 
-  .notification.hidden {
-    display: none;
-  }
-  
-  .close {
-    margin-left: 1rem;
-    margin-right: 1rem;
+.quantity{
+    width: 15%;
+    border-bottom: 0.1rem solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.total{
+    width: 10%;
+    border-bottom: 0.1rem solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid lightgrey;
+}
+
+.incart{
+    margin-right: 7rem;
+    margin-left: 2rem;
+    padding: 2.4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product ion-icon {
     cursor: pointer;
-  }
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img{
+    width: 7.5rem;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.basketTotalTitle{
+    width: 15%;
+}
+
+.basketTotal{
+    width: 25%;
+}
+
 
 /*========================================Footer========================================*/
 
@@ -411,7 +360,7 @@ ul{
 	border-radius: 50%;
 	color: black;
 	transition: all 0.5s ease;
-    border: 0.1rem solid black;
+    border: 1px solid black;
 }
 .footer-col .social-links a:hover{
 	color: #24262b;

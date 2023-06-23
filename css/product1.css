@@ -84,6 +84,12 @@ nav ul li a:hover::before{
     transform-origin: left;
 }
 
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
 nav .search{
     position: relative;
     display: flex;
@@ -271,7 +277,7 @@ nav .search{
     padding-left: 1rem;
     font-size: 2rem;
     margin-right: 1rem;
-    border: 1px solid #000000;
+    border: 0.1rem solid #000000;
 }
 
 input:focus{
@@ -288,7 +294,7 @@ a{
     margin-left: 1rem;
 }
 
-p{
+.okay2{
     color: #555;
 }
 
@@ -296,7 +302,7 @@ p{
     margin-top: 5rem;
 }
 
-.btn{
+.add-cart{
     display: inline-block;
     background: #880707;
     color: #fff;
@@ -306,9 +312,38 @@ p{
     transition: background 0.5s;
 }
 
-.btn:hover{
+.add-cart:hover{
     background: rgb(187, 21, 21);
 }
+
+
+.notification-container {
+    position: fixed;
+    bottom: 40rem;
+    right: 2rem;
+    z-index: 9999;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .notification {
+    background-color: #880707;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .notification.hidden {
+    display: none;
+  }
+  
+  .close {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
 
 /*========================================Footer========================================*/
 
@@ -421,8 +456,9 @@ ul{
 }
 
 
-@media(max-width: 574px){
-    .footer-col{
-      width: 100%;
+@media screen and (max-width: 720px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 3rem;
     }
 }
