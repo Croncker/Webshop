@@ -249,14 +249,15 @@ nav .search{
 }
 
 .price{
-    color: green;
+    color: rgb(0, 0, 0);
 }
 
 .single-product select{
     display: block;
     padding: 1rem;
     margin-top: 2rem;
-    border: 0.1rem solid #000000;
+    border: 0.2rem solid #000000;
+    border-radius: 0.7rem;
 }
 
 .single-product h4{
@@ -271,7 +272,8 @@ nav .search{
     padding-left: 1rem;
     font-size: 2rem;
     margin-right: 1rem;
-    border: 1px solid #000000;
+    border: 0.1rem solid #000000;
+    border-radius: 0.7rem;
 }
 
 input:focus{
@@ -284,7 +286,7 @@ a{
 }
 
 .single-product .fa{
-    color: #880707;
+    color: #000000;
     margin-left: 1rem;
 }
 
@@ -298,8 +300,8 @@ a{
 
 .btn{
     display: inline-block;
-    background: #880707;
-    color: #fff;
+    background-color: #f5aa09;
+    color: #000000;
     padding: 1rem 3rem;
     margin: 3rem 0;
     border-radius: 3rem;
@@ -307,7 +309,7 @@ a{
 }
 
 .btn:hover{
-    background: rgb(187, 21, 21);
+    background: rgb(160, 124, 5);
 }
 
 .notification-container {
@@ -320,7 +322,7 @@ a{
   }
   
   .notification {
-    background-color: #880707;
+    background-color: #f5aa09;
     color: white;
     padding: 1rem;
     border-radius: 0.4rem;
