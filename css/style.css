@@ -563,7 +563,6 @@ ul{
 	text-transform: capitalize;
 	margin-bottom: 3.5rem;
 	font-weight: 500;
-	position: relative;
 }
 .footer-col h4::before{
 	content: '';

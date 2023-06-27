@@ -303,6 +303,8 @@ ul{
 .footer{
 	background-color: rgba(218, 218, 218, 0.5);
     padding: 7rem 0;
+    padding-top: 10rem;
+    margin-top: 40rem;
 }
 .footer-col{
    width: 25%;
